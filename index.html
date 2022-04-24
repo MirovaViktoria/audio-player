@@ -7,14 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Audioplauer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <img class="background" src="../img/lemonade.png" alt="">
     <audio src="./audio/beyonce.mp3"></audio>
     <div class="container">
-        <div class="cube"></div>
-        <img src="./img/lemonade.png" alt="">
+        <div class="cube">
+            <div class="song-artist">Beyonce</div>
+            <div class="song-title">Don't Hurt Yourself</div>
+            <input type="range" class="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()">
+            <img class="play" src="./img/play.png" onclick="playPause()" id="play-pause">
+            <!-- <img src="./img/forward.png" onclick="nextSong()" id="next-song">
+            <img src="./img/backward.png" onclick="previousSong()" id="previous-song"> --> -->
+        </div>
+        <img class="backgroundplayer" src="./img/lemonade.png" alt="">
     </div>
     </div>
 </body>

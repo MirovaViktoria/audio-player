@@ -1,15 +1,14 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+background: #000000;
 }
-
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 .background {
   position: absolute;
   height: 100%;
@@ -22,8 +21,8 @@ body {
 
 .container{
 position: absolute;
-height: 300pt;
-width: 250pt;
+height: 470px;
+width: 400px;
 margin: auto;
 top: 0;
 left: 0;
@@ -39,9 +38,52 @@ box-shadow: 0 0 10px #000000;
 }
 .cube{
       position: absolute;
-      height: 50%;
+      height: 240px;
       width: 103%;
       background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
       z-index: 4;
       bottom: -17%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+      
+.backgroundplayer{
+      position: absolute;
+      width: 103%;
+      top: -7%;
+      transition: 1s;
+      z-index: 3;
+      }
+
+      .song-artist{
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Montserrat',
+            sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(15 239 106);
+            margin: 10px 0px 10px 0px;
+      }
+      .song-title{
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Montserrat',
+            sans-serif;
+            color: ghostwhite;
+            font-size: 15px;
+      }
+      .progress-bar{
+            appearance: none;
+            background: #000000;
+            height: 7px;
+            width: 300px;
+            margin: 20px 0px 0px 0px;
+      }
+      .play{
+      height: 40px;
+      width: 40px;
+      margin: 10px 0px 0px 0px;
       }

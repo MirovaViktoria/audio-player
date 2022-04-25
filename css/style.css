@@ -87,3 +87,13 @@ box-shadow: 0 0 10px #000000;
       width: 40px;
       margin: 10px 0px 0px 0px;
       }
+      .backward{
+      height: 40px;
+      width: 40px;
+      margin: 10px 10px 0px 0px;
+      }
+      .forward{
+      height: 40px;
+      width: 40px;
+      margin: 10px 0px 0px 10px;
+      }

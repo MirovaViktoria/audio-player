@@ -19,9 +19,10 @@
             <div class="song-artist">Beyonce</div>
             <div class="song-title">Don't Hurt Yourself</div>
             <input type="range" class="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()">
-            <img class="play" src="./img/play.png" onclick="playPause()" id="play-pause">
-            <!-- <img src="./img/forward.png" onclick="nextSong()" id="next-song">
-            <img src="./img/backward.png" onclick="previousSong()" id="previous-song"> --> -->
+            <div><img class="backward" src="./img/backward.png" onclick="nextSong()" id="next-song">
+                <img class="play" src="./img/play.png" onclick="playPause()" id="play-pause">
+                <img class="forward" src="./img/forward.png" onclick="previousSong()" id="previous-song">
+            </div>
         </div>
         <img class="backgroundplayer" src="./img/lemonade.png" alt="">
     </div>

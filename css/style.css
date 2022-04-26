@@ -113,6 +113,6 @@ box-shadow: 0 0 10px #000000;
       height: 10px;
       border-radius: 50%;
       -webkit-appearance: none;
-      cursor: ew-resize;
+      cursor:auto;
       background: #d8d9dc;
 }

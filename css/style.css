@@ -38,7 +38,7 @@ box-shadow: 0 0 10px #000000;
 }
 .cube{
       position: absolute;
-      height: 240px;
+      height: 260px;
       width: 103%;
       background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
       z-index: 4;
@@ -65,7 +65,7 @@ box-shadow: 0 0 10px #000000;
             font-weight: bold;
             font-size: 20px;
             color: rgb(15 239 106);
-            margin: 10px 0px 10px 0px;
+            margin: 20px 0px 10px 0px;
       }
       .song-title{
             display: flex;
@@ -81,7 +81,7 @@ box-shadow: 0 0 10px #000000;
             height: 7px;
             width: 300px;
             margin: 20px 0px 0px 0px;
-      }
+            }
       .play{
       height: 40px;
       width: 40px;

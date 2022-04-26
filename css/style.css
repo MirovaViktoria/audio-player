@@ -22,7 +22,7 @@ background: #000000;
 .container{
 position: absolute;
 height: 470px;
-width: 400px;
+width: 350px;
 margin: auto;
 top: 0;
 left: 0;
@@ -85,15 +85,26 @@ box-shadow: 0 0 10px #000000;
       .play{
       height: 40px;
       width: 40px;
-      margin: 10px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      }
+      .progress{
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            color: rgb(15 239 106);
       }
       .backward{
       height: 40px;
       width: 40px;
-      margin: 10px 10px 0px 0px;
+      margin: 0px 10px 0px 0px;
       }
       .forward{
       height: 40px;
       width: 40px;
-      margin: 10px 0px 0px 10px;
+      margin: 0px 0px 0px 10px;
+      }
+      .buttons{
+            display: flex;
+            width: 300px;
+            justify-content: space-around;
       }

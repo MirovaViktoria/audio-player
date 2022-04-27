@@ -1,21 +1,22 @@
 html,
 body {
 background: #000000;
+margin:0;
 }
 @font-face {
-  font-family: "Lato-Black";
-  src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+      font-family: "Lato-Black";
+      src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
 }
 .background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  filter: blur(10px);
-  z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      filter: blur(10px);
+      z-index: -1;
 }
 
 
@@ -47,7 +48,6 @@ box-shadow: 0 0 10px #000000;
       flex-direction: column;
       align-items: center;
       }
-
       
 .backgroundplayer{
       position: absolute;
@@ -56,7 +56,6 @@ box-shadow: 0 0 10px #000000;
       transition: 1s;
       z-index: 3;
       }
-
       .song-artist{
             display: flex;
             justify-content: space-around;

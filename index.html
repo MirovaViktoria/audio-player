@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Audioplauer</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,600&display=swap"
         rel="stylesheet">
@@ -18,19 +19,22 @@
         <div class="cube">
             <div class="song-artist">Beyonce</div>
             <div class="song-title">Don't Hurt Yourself</div>
-            <input type="range" class="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()">
+            <input type="range" class="progress-bar" value="0" min="0" max="100" step="1"
+                oninput="changeProgressBar(this.value)" id="progress">
             <div class="progress">
                 <div class="currentTime">0:00</div>
                 <div class="durationTime">3:53</div>
             </div>
-            <div class="buttons"><img class="backward" src="./img/backward.png" onclick="nextSong()" id="next-song">
-                <img class="play" src="./img/play.png" onclick="playPause()" id="play-pause">
-                <img class="forward" src="./img/forward.png" onclick="previousSong()" id="previous-song">
+            <div class="buttons">
+                <img class="backward" src="./img/backward.png" onclick="nextSong(-1)" id="next-song">
+                <img class="play" src="./img/play.png" onclick="" id="play-pause">
+                <img class="forward" src="./img/forward.png" onclick="nextSong(1)" id="previous-song">
             </div>
         </div>
         <img class="backgroundplayer" src="./img/lemonade.png" alt="">
     </div>
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

@@ -22,8 +22,8 @@ const songs =
             url: "./audio/Miyagi - Marmalade (feat. Andy Panda).mp3",
             artist: "Miyagi feat. Andy Panda",
             name: "Marmalade",
-            image: "./img/miyagi.png",
-            background: "./img/miyagi.png"
+            image: "./img/miyagi2.png",
+            background: "./img/miyagi2.png"
         },
         {
             url: "./audio/Linkin Park - Numb.mp3",

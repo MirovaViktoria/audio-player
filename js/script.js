@@ -15,22 +15,29 @@ const songs =
             url: "./audio/assets_audio_dontstartnow.mp3",
             artist: "Noname",
             name: "assets_audio_dontstartnow",
-            image: "./img/dontstartnow.png"
+            image: "./img/dontstartnow.png",
+            background: "./img/dontstartnow.png"
         },
         {
             url: "./audio/Miyagi - Marmalade (feat. Andy Panda).mp3",
             artist: "Miyagi feat. Andy Panda",
             name: "Marmalade",
+            image: "./img/Miyagi.png",
+            background: "./img/Miyagi.png"
         },
         {
             url: "./audio/Linkin Park - Numb.mp3",
             artist: "Linkin Park",
             name: "Numb",
+            image: "./img/Linkin-Park.png",
+            background: "./img/Linkin-Park.png"
         },
         {
             url: "./audio/One Republic - Apologize.mp3",
             artist: "One Republic",
             name: "Apologize",
+            image: "./img/the-fire.png",
+            background: "./img/the-fire.png"
         }
     ]
 let currentTrackNumber = 0;
@@ -87,8 +94,9 @@ function nextSong(change) {
     const currentTrack = songs[currentTrackNumber];
     document.querySelector('.song-artist').innerHTML = currentTrack.artist;
     document.querySelector('.song-title').innerHTML = currentTrack.name;
+    document.querySelector('.backgroundplayer').src = currentTrack.image;
+    document.querySelector('.background').src = currentTrack.background;
     audio.src = currentTrack.url;
     audio.currentTime = 0;
     progress.value = 0;
-
 }

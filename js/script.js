@@ -9,7 +9,8 @@ const songs =
             url: "./audio/beyonce.mp3",
             artist: "Beyonce",
             name: "Don't Hurt Yourself",
-            image: "./img/lemonade.png"
+            image: "./img/lemonade.png",
+            background: "./img/lemonade.png"
         },
         {
             url: "./audio/assets_audio_dontstartnow.mp3",

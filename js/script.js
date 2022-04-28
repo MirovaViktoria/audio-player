@@ -13,9 +13,24 @@ const songs =
         },
         {
             url: "./audio/assets_audio_dontstartnow.mp3",
-            artist: "Beyonce2",
+            artist: "Noname",
             name: "assets_audio_dontstartnow",
             image: "./img/dontstartnow.png"
+        },
+        {
+            url: "./audio/Miyagi - Marmalade (feat. Andy Panda).mp3",
+            artist: "Miyagi feat. Andy Panda",
+            name: "Marmalade",
+        },
+        {
+            url: "./audio/Linkin Park - Numb.mp3",
+            artist: "Linkin Park",
+            name: "Numb",
+        },
+        {
+            url: "./audio/One Republic - Apologize.mp3",
+            artist: "One Republic",
+            name: "Apologize",
         }
     ]
 let currentTrackNumber = 0;
@@ -71,6 +86,7 @@ function nextSong(change) {
             currentTrackNumber += change;
     const currentTrack = songs[currentTrackNumber];
     document.querySelector('.song-artist').innerHTML = currentTrack.artist;
+    document.querySelector('.song-title').innerHTML = currentTrack.name;
     audio.src = currentTrack.url;
     audio.currentTime = 0;
     progress.value = 0;

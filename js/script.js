@@ -83,6 +83,9 @@ audio.ontimeupdate = (event) => {
     var date = new Date(0);
     date.setSeconds(audio.currentTime)
     currentTime.innerHTML = `${date.getMinutes()}:${String(date.getSeconds()).padStart(2, '0')}`
+    if (audio.currentTime >= audio.duration) {
+        // $('#next').trigger('click');
+    }
 };
 function nextSong(change) {
     if (currentTrackNumber + change < 0)

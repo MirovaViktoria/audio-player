@@ -30,15 +30,15 @@ const songs =
             url: "./audio/Linkin Park - Numb.mp3",
             artist: "Linkin Park",
             name: "Numb",
-            image: "./img/Linkin-Park.png",
-            background: "./img/Linkin-Park.png"
+            image: "./img/Linkin.png",
+            background: "./img/Linkin.png"
         },
         {
             url: "./audio/One Republic - Apologize.mp3",
             artist: "One Republic",
             name: "Apologize",
-            image: "./img/the-fire.png",
-            background: "./img/the-fire.png"
+            image: "./img/human.png",
+            background: "./img/human.png"
         }
     ]
 let currentTrackNumber = 0;
